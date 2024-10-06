@@ -1,0 +1,30 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  padding: 0;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #fdfdfd;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding-bottom: 20px;
+}
+
+.profileBox {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  padding: 20px;
+  max-width: 700px;
+  border-radius: 30px;
+  background-color: #fef0f0;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 1px 1px 6px 1px rgba(0, 0, 0, 0.5);
+}
+
+.profileBox:hover {
+  box-shadow: none;
+}

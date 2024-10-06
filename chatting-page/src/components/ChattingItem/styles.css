@@ -1,0 +1,10 @@
+.chatting-item {
+  position: relative;
+}
+
+.profile {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  font-size: 50px;
+}

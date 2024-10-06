@@ -1,0 +1,82 @@
+.chatting-frame {
+  height: 95vh;
+  width: 35%;
+  background-color: white;
+  margin: 0 auto;
+  margin-bottom: 1vh;
+  position: relative;
+  padding: 1rem;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* 조금 더 입체적인 효과 */
+  border-radius: 10px; /* 둥근 모서리 추가 */
+  transition: width 0.3s ease-in-out; /* 애니메이션으로 변형 */
+}
+
+.send-icon {
+  position: absolute;
+  font-size: 24px; /* 약간 더 큰 아이콘 */
+  bottom: 0; /* 충분한 공간 확보 */
+  right: 0.5rem;
+  cursor: pointer;
+  transition: transform 0.2s; /* 아이콘 클릭 시 효과 */
+}
+
+.send-icon:hover {
+  transform: scale(1.2); /* 아이콘 커짐 */
+}
+
+.back-icon {
+  position: absolute;
+  font-size: 24px; /* 아이콘 크기 통일 */
+  top: 1rem; /* 충분한 공간 확보 */
+  left: 1rem;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.back-icon:hover {
+  transform: scale(1.2); /* 아이콘 커짐 */
+}
+
+.user {
+  font-weight: bold;
+  padding-top: 5px;
+  text-align: center; /* 중앙 정렬 */
+  font-size: 1.2rem; /* 약간 더 큰 글씨 */
+}
+
+@media screen and (max-width: 1024px) {
+  .chatting-frame {
+    width: 50%; /* 태블릿 크기에서 넓게 조정 */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .chatting-frame {
+    width: 100%; /* 모바일 화면에서는 전체 너비 사용 */
+    height: 95vh; /* 모바일에서는 약간 더 짧게 */
+    margin-bottom: 0; /* 하단 여백 제거 */
+    padding: 0.5rem; /* 패딩 축소 */
+  }
+
+  .send-icon {
+    font-size: 24px;
+    bottom: 0rem;
+    right: 1.5rem;
+  }
+
+  .back-icon {
+    font-size: 22px;
+    top: 0.5rem;
+    left: 0.5rem;
+  }
+
+  .user {
+    font-size: 1rem; /* 모바일에서는 글자 크기 축소 */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .chatting-frame {
+    width: 100%;
+  }
+}

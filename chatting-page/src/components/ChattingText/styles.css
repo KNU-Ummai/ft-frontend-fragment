@@ -1,0 +1,15 @@
+.chatting-info {
+  list-style: none;
+  margin-left: 20px;
+}
+
+.user-name {
+  font-size: 20px;
+  text-align: left;
+  margin-bottom: 5px;
+}
+
+.recent-dialog {
+  font-size: 10px;
+  color: gray;
+}
